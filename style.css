@@ -1,0 +1,113 @@
+/* General reset for margins and padding */
+body, h1, h2, h3, p, ul, li, button {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space between logo/title and nav */
+  background: #333;
+  color: white;
+  padding: 20px;
+}
+
+.logo {
+  width: 50px; /* Set the width of the logo */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 15px; /* Space between logo and heading */
+}
+
+/* Navigation */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex; /* Align links horizontally */
+  margin: 0; /* Remove default margin from ul */
+}
+
+nav ul li {
+  margin-left: 20px; /* Space between links */
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Body */
+body {
+  background-color: #f4f4f4;
+  padding: 0;
+  margin: 0;
+}
+
+/* Section */
+section {
+  padding: 20px;
+  margin: 20px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h2 {
+  color: #333;
+}
+
+/* Car List */
+.car-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.car {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  width: 30%;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.car:hover {
+  transform: scale(1.05);
+}
+
+.car img {
+  width: 100%; /* Make the image fill the container */
+  height: 200px; /* Fixed height for uniformity */
+  object-fit: cover; /* Ensure the image covers the area while maintaining aspect ratio */
+  border-radius: 5px;
+}
+
+/* Button */
+button {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background 0.3s;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: #218838;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background: #333;
+  color: white;
+  bottom: 0;
+  width: 100%;
+}
